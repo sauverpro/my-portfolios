@@ -110,8 +110,10 @@ body {
     border: 2px solid #e2dfdf;
     padding: 1rem;
     border-radius: 5px;
-    margin-bottom: 1rem;
-    max-width: 270px;
+    margin: 1rem;
+    max-width: 350px;
+    align-items: center;
+    text-align: center;
     /* Adjust the width as needed */
     display: inline-block;
     /* Display cards inline */
@@ -120,7 +122,25 @@ body {
     box-sizing: border-box;
     /* Include padding in width calculation */
 }
-
+.project-card .explore{
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+text-align: center;
+}
+.project-card .explore a{
+  text-decoration: none;
+  color: #007bff;
+  font-size: large;
+  font-weight: bold;
+}
+.project-card .explore a:hover{
+  color: whitesmoke;
+}
+.project-card .explore:hover{
+  background: #1c568b;
+  color: whitesmoke;
+}
 .project-card h3 {
     margin-top: 0;
 }
