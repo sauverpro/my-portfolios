@@ -76,3 +76,15 @@ function validateForm() {
     formMessage.style.color = "blue";
     return true;
 }
+
+  // JavaScript function to toggle the mobile menu
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileMenu.classList.toggle("active");
+}
+
+// JavaScript function to hide the mobile menu when a menu item is clicked
+function hideMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileMenu.classList.remove("active");
+}
