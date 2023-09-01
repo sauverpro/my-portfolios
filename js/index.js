@@ -73,6 +73,6 @@ function validateForm() {
 
     // If all validation passes, you can submit the form.
     formMessage.innerHTML = "Form submitted successfully!";
-    formMessage.style.color = "green";
+    formMessage.style.color = "blue";
     return true;
 }
