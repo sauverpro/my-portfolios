@@ -103,34 +103,26 @@
           <img src="images/sauve.png" alt="Avatar" style="width: 90px" />
           <p>
             <span>Front-end Developer</span>--
-            <b style="color: dodgerblue"> NARADA LTD</b>
+            <b style="color: dodgerblue">POLYSTAR NONOTECH </b>
           </p>
-          <p>JAN 2022 - SEPT 2022</p>
-          <p>John Doe saved us from a web disaster.</p>
+          <p>NOV 2022 - FEB 2023</p>
+          <p>I worked as front end developer to manage iot and imbedded system </p>
         </div>
         <div class="container">
           <img src="images/sauve.png" alt="Avatar" style="width: 90px" />
           <p>
-            <span>Front-end Developer</span>--
-            <b style="color: dodgerblue"> NARADA LTD</b>
+            <span>Software Developer</span>--
+            <b style="color: dodgerblue">NARADA LTD</b>
           </p>
-          <p>JAN 2022 - SEPT 2022</p>
-          <p>John Doe saved us from a web disaster.</p>
+          <p>May 2023 - PRESENT</p>
+          <p>Software developer and system analyser</p>
         </div>
-        <div class="container">
-          <img src="images/sauve.png" alt="Avatar" style="width: 90px" />
-          <p>
-            <span>Front-end Developer</span>--
-            <b style="color: dodgerblue"> NARADA LTD</b>
-          </p>
-          <p>JAN 2022 - SEPT 2022</p>
-          <p>John Doe saved us from a web disaster.</p>
-        </div>
+        
       </div>
       <!-- Add more skills with progress bars as needed -->
 
-      <!-- testmonials -->
-      <h3>TESTMONIALS</h1>
+      <!-- testimonials -->
+      <h3>TESTIMONIALS</h1>
           <h1>OVER <b style="color: dodgerblue;">50+</b> <br>
             PEOPLE TRUST ME</h1>
       <!-- Slideshow container -->
@@ -158,7 +150,7 @@
             >"I'm truly amazed by the web development skills of TUYIZERE JEAN
             SAUVEUR. The websites created are both functional and beautiful."</q
           >
-          <p class="author">- Thomas A. Edison</p>
+          <p class="author">- Dr. Antoine GATERA</p>
         </div>
 
         <!-- Next/prev buttons -->
@@ -176,30 +168,24 @@
       <h2 id="contact">Contact</h2>
       <p>You can reach me at: <a href="mailto:sauveur.dev@gmail.com" style="text-decoration: none;color: darkturquoise;">sauveur.dev.email@gmail.com</a></p>
       <div class="forms">
-        <form action="/action_page.php">
+        <form action="" id="contact-form" onsubmit="return validateForm()">
           <div class="row">
             <div class="col-25">
               <label for="fname">First Name</label>
             </div>
             <div class="col-75">
               <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
+                type="text" id="name" name="name" placeholder="Your name.."
               />
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="lname">Last Name</label>
+              <label for="email">Email</label>
             </div>
             <div class="col-75">
               <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
+                type="email" id="email"  name="email"  placeholder="Your Email"
               />
             </div>
           </div>
@@ -208,9 +194,9 @@
               <label for="subject">Subject</label>
             </div>
             <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
             <br>
-
+            <div id="form-message"></div>
             <div class="row">
             <input type="submit" value="Submit" />
           </div></div>
@@ -224,64 +210,7 @@
     <div class="footer">
       <p>&copy; 2023 TUYIZERE JEAN SAUVEUR | Web Developer</p>
     </div>
-    <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-          navbar.style.background = "#007BFF";
-        }
-      }
-    </script>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-      // Automatically advance the slides every 5 seconds
-      setInterval(() => {
-        slideIndex = (slideIndex + 1) % carousel.children.length;
-        updateCarousel();
-      }, 5000);
-    </script>
+    <script src="js/index.js"></script>
+    
   </body>
 </html>
