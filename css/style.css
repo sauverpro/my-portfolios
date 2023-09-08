@@ -417,7 +417,7 @@ input[type=text],input[type=email], select, textarea {
 }
 
 /* Media query for small screens (show the mobile menu button) */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .mobile-menu-button {
       display: block;
   }
