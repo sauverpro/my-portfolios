@@ -15,9 +15,9 @@ body {
     /* Black background with 0.5 opacity */
     color: #fff;
     text-align: center;
-    box-shadow: 2px 2px 1px 1px #ffffff ;
+    border-bottom: 5px solid #ffffff;
     padding: 2rem;
-    margin-bottom: 2px;
+    margin-bottom: 0;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -289,6 +289,7 @@ text-align: center;
   @media (max-width: 500px) {
     .container {
         text-align: center;
+        width: 90%;
     }
     .container img {
         margin: auto;
@@ -299,7 +300,7 @@ text-align: center;
 /*  */
 /* form */
 input[type=text],input[type=email], select, textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     background: transparent;
